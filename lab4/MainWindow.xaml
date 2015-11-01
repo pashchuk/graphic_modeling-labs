@@ -1,0 +1,40 @@
+﻿<Window x:Class="lab4.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:lab4"
+        xmlns:lab1="clr-namespace:lab1;assembly=lab1"
+        mc:Ignorable="d"
+        Title="MainWindow" MinHeight="600" MinWidth="800">
+    <Window.Resources>
+        <local:MainWindowViewModel x:Key="Model"/>
+        <Style TargetType="{x:Type TextBlock}">
+            <Setter Property="HorizontalAlignment" Value="Center"/>
+            <Setter Property="VerticalAlignment" Value="Center"/>
+            <Setter Property="FontSize" Value="14"/>
+            <Setter Property="Margin" Value="8"/>
+        </Style>
+    </Window.Resources>
+    <Grid DataContext="{StaticResource Model}">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="Auto"/>
+        </Grid.ColumnDefinitions>
+        <local:MyFigure Grid.Column="0" HorizontalAlignment="Center" VerticalAlignment="Center" Stroke="Black" M="{Binding  M, Mode=OneWay}" R="{Binding R, Mode=OneWay}" FigureRadius="{Binding FigureRadius, Mode=OneWay}"/>
+        <StackPanel Grid.Column="1" Orientation="Horizontal">
+            <StackPanel>
+                <TextBlock Text="M"/>
+                <Slider Orientation="Vertical" Height="500" AutoToolTipPrecision="2" VerticalAlignment="Stretch" IsDirectionReversed="True" Margin="5,0" AutoToolTipPlacement="TopLeft" Minimum="1" Maximum="20" Value="{Binding M}"/>
+            </StackPanel>
+            <StackPanel>
+                <TextBlock Text="R"/>
+                <Slider Orientation="Vertical" Height="500" IsDirectionReversed="True" Margin="5,0" AutoToolTipPlacement="BottomRight" Minimum="10" Maximum="200" Value="{Binding R}"/>
+            </StackPanel>
+            <StackPanel>
+                <TextBlock Text="FR"/>
+                <Slider Orientation="Vertical" Height="500" IsDirectionReversed="True" Margin="5,0" AutoToolTipPlacement="BottomRight" Minimum="0" Maximum="100" Value="{Binding FigureRadius}"/>
+            </StackPanel>
+        </StackPanel>
+    </Grid>
+</Window>
