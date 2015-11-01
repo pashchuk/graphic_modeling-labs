@@ -5,6 +5,7 @@
 1. Graphic primitives
 2. Geometric models on the area
 3. Building simple surface
+4. Drawing combined figures (combine figures which have been drawn in `lab1` using figure's layout in `lab2`)
 
 #### Labs requirements:
 1. not added.
@@ -14,3 +15,4 @@
     __Installing links:__
     * [python 2.7](https://www.python.org/downloads/)
     * [matplotlib](http://matplotlib.org/users/installing.html)
+4. same as __2__ point.
