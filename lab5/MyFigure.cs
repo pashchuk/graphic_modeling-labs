@@ -2,10 +2,9 @@
 using System.Collections.Generic;
 using System.Windows;
 using System.Windows.Media;
-using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace lab4
+namespace lab5
 {
     public class MyFigure : lab1.MyFigure
     {

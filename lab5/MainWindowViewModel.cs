@@ -1,4 +1,4 @@
-﻿namespace lab4
+﻿namespace lab5
 {
     public class MainWindowViewModel: lab1.MainVindowViewModel
     {
