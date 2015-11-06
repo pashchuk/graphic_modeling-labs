@@ -7,8 +7,8 @@
     <ProjectGuid>{D1AF9483-0CE4-4D73-A43D-2E324AA33F28}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>lab1</RootNamespace>
-    <AssemblyName>lab1</AssemblyName>
+    <RootNamespace>lab2</RootNamespace>
+    <AssemblyName>lab2</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
